@@ -1,6 +1,6 @@
 import { render } from './util';
 
-// TODO: What is the value of foo.bar and foo.baz?
+// TODO: What is the value of foo.bar and foo.baz? 42 undefined
 render('objects1', () => {
   const foo = {
     bar: 42,
@@ -10,10 +10,14 @@ render('objects1', () => {
 
 // TODO: Create an object of objects and return it.
 render('objects2', () => {
-
+const object3 = {
+  apples: 'green',
+};
+return `object3:${object3.apples}`;
 });
 
 // TODO: Create an array of objects and return the element at index 0.
 render('objects3', () => {
-  
+  let pizza= [`dominoes`, 10, `pepperoni`];
+  return pizza;
 });
